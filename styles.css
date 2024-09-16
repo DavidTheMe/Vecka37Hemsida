@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f3f3f3;
+}
+
+.postsSection {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 80%;
+}
+.postBox {
+  width: 33%;
+  width: 400px;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding: 26px;
+  background-color: #cccccc;
+}
+
+article {
+  font-size: 24px;
+  padding-right: 40px;
+}
+
+img {
+  width: 100%;
+  float: right;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: start;
+  position: sticky;
+  top: 0;
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  float: left;
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 28px;
+}
+
+.buttonSection {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  justify-content: top;
+  background-color: #b1cddd;
+  width: 200px;
+  padding: 20px;
+  position: fixed;
+  top: 88px;
+}
+
+.button{
+    padding: 18px;
+    border-radius: 24px;
+    background-color: rgb(27, 118, 160);
+    color: white;
+    height: 32px;
+    width: 96px;
+    text-align: center;
+    position:relative;
+}
+
+.allSections{
+    display: flex;
+    justify-content: end;
+
+}
+
+@media screen and (max-width: 800px) {
+    .buttonSection{
+        flex-direction: row;
+        width: 100%;
+        padding: 0px;
+        justify-content: center;
+        gap: 10px;
+    }
+    .postsSection {
+        width: 100%;
+      }
+  }
